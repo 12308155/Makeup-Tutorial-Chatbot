@@ -1,0 +1,86 @@
+.routine-list-modern li {
+    background: #fff;
+    border-radius: 18px;
+    /* border: 1.5px solid #f3e6fa; */
+    box-shadow: 0 2px 10px rgba(107, 70, 193, 0.06);
+    margin-bottom: 1.1rem;
+    padding: 1.1rem 1.5rem 1.1rem 1.1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.08rem;
+    transition: box-shadow 0.2s;
+}
+.routine-list-modern li:hover {
+    box-shadow: 0 4px 18px rgba(210, 63, 119, 0.10);
+    /* border-color: #d23f77; */
+}
+
+/* Enhanced interactive tutorial steps list styling */
+.tutorial-steps-list {
+    list-style: none;
+    background: none;
+    padding-left: 0;
+    margin: 1.5rem 0 2.5rem 0;
+    max-width: 700px;
+}
+.tutorial-steps-list li {
+    position: relative;
+    background: linear-gradient(90deg, #fff 70%, #fce4ec 100%);
+    border-radius: 22px;
+    margin-bottom: 1.5rem;
+    padding: 1.6rem 2.2rem 1.6rem 3.5rem;
+    font-size: 1.22rem;
+    box-shadow: 0 6px 32px rgba(210, 63, 119, 0.13);
+    line-height: 1.7;
+    border-left: 8px solid #d23f77;
+    transition: box-shadow 0.2s, transform 0.18s, border-color 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    animation: stepFadeIn 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.tutorial-steps-list li::before {
+    content: '\f111';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #d23f77;
+    position: absolute;
+    left: 1.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.35rem;
+    opacity: 0.92;
+}
+.tutorial-steps-list li strong {
+    background: linear-gradient(90deg, #d23f77 30%, #6B46C1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    margin-right: 0.4rem;
+    letter-spacing: 0.7px;
+    font-size: 1.25em;
+    text-shadow: 0 2px 8px #f3e6fa;
+}
+.tutorial-steps-list li:hover {
+    box-shadow: 0 12px 36px rgba(210, 63, 119, 0.22);
+    border-left: 8px solid #6B46C1;
+    transform: scale(1.035) translateX(7px);
+    background: linear-gradient(90deg, #fff 50%, #f3e6fa 100%);
+}
+@keyframes stepFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 700px) {
+    .tutorial-steps-list {
+        max-width: 98vw;
+    }
+    .tutorial-steps-list li {
+        font-size: 1.05rem;
+        padding: 1.1rem 1.1rem 1.1rem 2.1rem;
+    }
+    .tutorial-steps-list li::before {
+        left: 1.1rem;
+        font-size: 1.05rem;
+    }
+} 

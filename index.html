@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Tutorial Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><span class="highlight">Makeup</span> Tutorial Bot</h1>
+            </div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="ai-assistant.html" class="chat-bot-btn">
+                        <i class="fas fa-robot"></i> AI Chat
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Your Personal Makeup Guide</h2>
+                <p>Discover the perfect makeup tutorials for your style</p>
+                <div class="hero-buttons">
+                    <a href="skin-types.html" class="cta-button">Get Started ✨</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skin-analysis-section">
+            <div class="analysis-container">
+                <div class="analysis-header">
+                    <h2>Skin Analysis & Product Recommendations</h2>
+                    <p>Get personalized skincare advice and product recommendations based on your skin analysis.</p>
+                </div>
+
+                <div class="button-container">
+                    <a href="analyze.html" class="analyze-link-btn">
+                        <i class="fas fa-camera"></i>
+                        Analyze Your Skin
+                    </a>
+                </div>
+
+                <div class="analysis-status" style="display: none;">
+                    <div class="preview-container">
+                        <img id="preview-image" src="" alt="Preview">
+                        <div class="analyzing-overlay">
+                            <div class="loading-spinner"></div>
+                            <p>Analyzing your skin...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-container" style="display: none;">
+                    <div class="skin-analysis">
+                        <h3>Your Skin Analysis</h3>
+                        <div id="skin-details"></div>
+                    </div>
+                    
+                    <div class="product-recommendations">
+                        <h3>Recommended Products</h3>
+                        <div id="product-list"></div>
+                    </div>
+
+                    <div class="skincare-routine">
+                        <h3>Your Personalized Routine</h3>
+                        <div id="routine-steps"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorials" class="tutorials">
+            <h2>Popular Tutorials</h2>
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Natural Makeup">
+                    <h3>Natural Makeup Look</h3>
+                    <p>Quick guide to achieve a fresh, natural everyday makeup look.</p>
+                    <a href="natural-makeup.html" class="tutorial-button">Explore Now ✨</a>
+                </div>
+                <div class="tutorial-card">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Evening Makeup">
+                    <h3>Evening Glam</h3>
+                    <p>Create stunning evening makeup for special occasions.</p>
+                    <a href="evening-glam.html" class="tutorial-button">Get Glamorous ✨</a>
+                </div>
+                <div class="tutorial-card">
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bridal Makeup">
+                    <h3>Bridal Makeup</h3>
+                    <p>Perfect bridal makeup techniques for your special day.</p>
+                    <a href="bridal-makeup.html" class="tutorial-button">Start Learning ✨</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-assistant-intro">
+            <div class="ai-container">
+                <div class="ai-content">
+                    <div class="ai-text">
+                        <h2>Meet Your AI Makeup Assistant</h2>
+                        <p>Get personalized makeup advice, product recommendations, and instant answers to all your beauty questions!</p>
+                        <ul class="ai-features">
+                            <li><i class="fas fa-magic"></i> Personalized Beauty Advice</li>
+                            <li><i class="fas fa-palette"></i> Custom Color Matching</li>
+                            <li><i class="fas fa-star"></i> Product Recommendations</li>
+                            <li><i class="fas fa-clock"></i> 24/7 Beauty Support</li>
+                        </ul>
+                        <a href="ai-assistant.html" class="ai-cta-button">
+                            Chat with AI Assistant <i class="fas fa-robot"></i>
+                        </a>
+                    </div>
+                    <div class="ai-visual">
+                        <div class="chat-preview">
+                            <div class="chat-message user">
+                                What's the best foundation for oily skin?
+                            </div>
+                            <div class="chat-message bot">
+                                For oily skin, I recommend using oil-free, matte foundations with good coverage. Look for terms like "oil-control" or "long-wearing" 💄
+                            </div>
+                            <div class="chat-message user">
+                                How do I make my makeup last longer?
+                            </div>
+                            <div class="chat-message bot">
+                                Start with a good primer, use setting powder, and finish with a setting spray! I can show you the best techniques ✨
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Our Bot</h2>
+            <div class="about-content">
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-magic"></i>
+                        <h3>Personalized Recommendations</h3>
+                        <p>Get custom makeup tutorials tailored to your skin type, tone, and preferences.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Expert Guidance</h3>
+                        <p>Learn from professional makeup artists and beauty experts through our curated tutorials.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <h3>Diverse Looks</h3>
+                        <p>Explore tutorials for every occasion - from natural day looks to glamorous evening styles.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h3>Beauty Community</h3>
+                        <p>Join our community of makeup enthusiasts and share your beauty journey.</p>
+                    </div>
+                </div>
+                <div class="about-description">
+                    <p>Our intelligent makeup tutorial bot is designed to be your personal beauty assistant. Whether you're a beginner or makeup pro, we provide step-by-step guidance, product recommendations, and technique tips to help you achieve your desired look.</p>
+                    <div class="creators-section">
+                        <div class="creator-info">
+                            <div class="creator-image">
+                                <img src="m1.jpg" alt="Sitaram Manepalli">
+                            </div>
+                            <div class="creator-details">
+                                <h3>Created By</h3>
+                                <h4>Sitaram Manepalli</h4>
+                                <p>Passionate about creating innovative beauty solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-header">
+                <h2>Let's Connect</h2>
+                <p class="contact-subtitle">Have a question or want to collaborate? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Get in Touch</h3>
+                    <p>Fill out the form and we'll get back to you within 24 hours.</p>
+                    <div class="contact-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Response</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Beauty Advice</span>
+                        </div>
+                    </div>
+                    <div class="direct-contact">
+                        <div class="email-section">
+                            <h4>Send Email</h4>
+                            <p class="email-address">Saisitaram49@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form-modern" action="https://formspree.io/f/mzzkqkvw" method="POST">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i> Full Name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email Address
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag"></i> Subject
+                        </label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment-dots"></i> Message
+                        </label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what you're thinking..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="form-status" style="display: none;"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            
+            <p>&copy; 2025 Makeup Tutorial Bot. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
