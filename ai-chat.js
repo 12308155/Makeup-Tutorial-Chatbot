@@ -1,5 +1,5 @@
 // AI Makeup Assistant Chat Bot
-const API_KEY = 'AIzaSyAra_ol-J3Jt3zjmoL17ZUh6WmNghZ1lgE';
+const API_KEY = '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';
 const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
 // DOM Elements
