@@ -1,6 +1,6 @@
 // AI Makeup Assistant Chat Bot
 const API_KEY = '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';
-const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const API_URL = 'https://huggingface.co/settings/tokens/69b9b7fddcf046e5efcb2eed';
 
 // DOM Elements
 let chatMessages;
